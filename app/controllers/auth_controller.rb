@@ -5,7 +5,7 @@ class AuthController < ApplicationController
         user = User.find_by(username: params[:username])
         if user && user.authenticate(params[:password])
             render json: {
-                user: user, 
+                user: UserSerializer.new(user), 
                 token: JWT.encode({userId: user.id}, ENV['JWT_SECRET'])
             }
         else 
