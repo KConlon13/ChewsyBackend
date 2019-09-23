@@ -8,7 +8,8 @@ class FavoritesController < ApplicationController
     def create
         favorite = Favorite.create(user_id: params[:user_id], restaurant_id: params[:restaurant_id])
 
-        render json: favorite
+        user = User.find(params[:user_id])
+        render json: {favorite: FavoriteSerializer.new(favorite), user: UserSerializer.new(user) }
     end
 
     def destroy
@@ -18,6 +19,7 @@ class FavoritesController < ApplicationController
 
     def show
         favorite = Favorite.find_by(id: params[:id])
+
         render json: favorite
     end
 end
