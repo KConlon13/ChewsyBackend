@@ -1,7 +1,7 @@
 
-user1 = User.create!(user_id: 1, username: "KyleConlon", password: "password")
-user2 = User.create!(user_id: 2, username: "PuppyMcDogFace", password: "password")
-user3 = User.create!(user_id: 3, username: "Test", password: "password")
+user1 = User.create!(username: "KyleConlon", password: "password")
+user2 = User.create!(username: "PuppyMcDogFace", password: "password")
+user3 = User.create!( username: "Test", password: "password")
 
 
 restaurant1 = Restaurant.create!(restaurant_id: 1, name: "Marta", location: "29 E 29th St, New York, NY 10016 ", description: "Cracker-thin pizza & other modern Italian fare in a polished hotel dining room with an open kitchen.", peanut: true, gluten: true, wheat: false, dairy: true, treenut: true, eggs: false)
