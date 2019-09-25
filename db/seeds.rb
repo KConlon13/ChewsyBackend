@@ -8,8 +8,7 @@ restaurant1 = Restaurant.create!(restaurant_id: 1, name: "Marta", location: "29 
 
 restaurant2 = Restaurant.create!(restaurant_id: 2, name: "Blue Smoke", location: "255 Vesey St, New York, NY 10282", description: "Danny Meyer's spacious barbecue joint matches its signature ribs with deep beer & bourbon lists.", peanut: false, gluten: true, wheat: true, dairy: false, treenut: false, eggs: false)
 
-restaurant3 = Restaurant.create!(restaurant_id: 3, name: "The Donut Pub", location: "203 W 14th St
-New York , NY 10011 ", description: "Donuts draw crowds 24/7 to this modest spot also selling pastries, sandwiches & coffee since 1964.", peanut: true, gluten: true, wheat: true, dairy: true, treenut: true, eggs: false)
+restaurant3 = Restaurant.create!(restaurant_id: 3, name: "The Donut Pub", location: "203 W 14th St, New York , NY 10011 ", description: "Donuts draw crowds 24/7 to this modest spot also selling pastries, sandwiches & coffee since 1964.", peanut: true, gluten: true, wheat: true, dairy: true, treenut: true, eggs: false)
 
 restaurant4 = Restaurant.create!(restaurant_id: 4, name: "Chipotle Mexican Grill", location: "25 W 45th St, New York, NY 10036 ", description: "Fast-food chain offering Mexican fare, including design-your-own burritos, tacos & bowls.", peanut: true, gluten: false, wheat: false, dairy: true, treenut: true, eggs: false)
 
