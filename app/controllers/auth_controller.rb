@@ -19,7 +19,7 @@ class AuthController < ApplicationController
             user_id = JWT.decode(token, ENV["JWT_SECRET"])[0]["userId"]
             user = User.find(user_id)
             render json: {
-                user: user
+                user: UserSerializer.new(user)
             }
         else 
             render json: {errors: "invalid username/password combination"}
